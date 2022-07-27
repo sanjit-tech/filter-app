@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Data from "./Data";
 import Card from "./Card";
 import Buttons from "./Buttons";
+import FoodCard from "./components/CardList";
 
 const App = () => {
   const [item, setItem] = useState(Data);
@@ -19,12 +20,13 @@ const App = () => {
       <div className="container-fluid">
         <div className="row">
           <h1 className="col-12 text-center my-3 fw-bold">Food Filtering App</h1>
-          <Buttons
-            filterItem={filterItem}
-            setItem={setItem}
-            menuItems={menuItems}
-          />
-          <Card item={item} />
+          {/*<Buttons*/}
+            {/*filterItem={filterItem}*/}
+            {/*setItem={setItem}*/}
+            {/*menuItems={menuItems}*/}
+          {/*/>*/}
+          {/*<Card item={item} />*/}
+          <FoodCard/>
         </div>
       </div>
     </>
